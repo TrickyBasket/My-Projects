@@ -55,7 +55,7 @@ pencere.title("Ortalama hesaplama programı")
 girisler = []
 derzler = []
 while x != ders_sayi:
-    ders_adi = tk.Label(pencere, text=f"Sayi{x+1}")
+    ders_adi = tk.Label(pencere, text=f"Ders{x+1}")
     ders_adi.grid(row=x, column=0, padx=10, pady=10)
     spinbox = tk.Spinbox(pencere, from_=0, to=10)
     spinbox.grid(row=x, column=2, padx=10, pady=10)
