@@ -2,10 +2,10 @@ import tkinter as tk
 
 # Değişkenler
 x = 0
-ders_sayi = 5 # Ders çeşidi
+ders_sayi = 5
 toplam = 0
 sayilar = []
-ders_toplam = 0 # toplam ders sayisi
+ders_toplam = 0
 dertler=[]
 y = 0
 def ortalama():
@@ -14,9 +14,9 @@ def ortalama():
     sayilar = [] 
     dertler = []
     for i in range(ders_sayi):
-        value = girisler[i].get().strip()
-        if value:
-            sayilar.append(value)
+        deger = girisler[i].get().strip()
+        if deger:
+            sayilar.append(deger)
         else:
             # Hangi derse giriş yapılmadı söle
             uyari_label.config(text=f"Lütfen Sayı Girin - Ders {i + 1}")
